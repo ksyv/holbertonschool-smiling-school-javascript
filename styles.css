@@ -901,17 +901,24 @@
   }
 }
 
-.loader {
-  border: 10px solid #f3f3f3;
-  border-top: 10px solid #C271FF;
-  border-radius: 50%;
-  width: 80px;
-  height: 80px;
-  animation: spin 2s linear infinite;
-  margin: auto;
+.carousel-item .row {
+  display: flex;
+  justify-content: center;
 }
 
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+.carousel-inner {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: max-content;  /* Permet un défilement fluide */
+}
+
+.carousel-item {
+    flex: 0 0 auto;
+    width: 25%; /* 4 vidéos visibles à la fois */
 }
