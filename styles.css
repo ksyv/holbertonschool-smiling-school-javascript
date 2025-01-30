@@ -17,7 +17,7 @@
   --faq-pad-outer: 7vw;
 }
 
-/* General Styles  */
+/* General Styles */
 
 .body {
   font-family: var(--font-family-1);
@@ -59,12 +59,14 @@
   width: 20px;
   display: block;
 }
+
 .header .navbar-line2 {
   background-color: var(--color-white);
   height: var(--nav-line-height);
   width: 13px;
   display: block;
 }
+
 .header .navbar-line3 {
   background-color: var(--color-white);
   height: var(--nav-line-height);
@@ -114,6 +116,7 @@
 .hero {
   margin-top: 155px;
 }
+
 .hero h1 {
   font-size: 120px;
 }
@@ -139,6 +142,7 @@
   margin-top: 168px;
   margin-bottom: 0;
 }
+
 .hero-learn span {
   color: var(--main-color);
 }
@@ -160,6 +164,7 @@
   font-style: italic;
   line-height: 24px;
 }
+
 .pros {
   padding-top: 87px;
   padding-bottom: 98px;
@@ -217,6 +222,7 @@
 .quote-text h4 {
   font-size: 22px;
 }
+
 .quote-text span {
   font-style: italic;
   font-size: 22px;
@@ -239,6 +245,7 @@
   .quotes .carousel-item img {
     margin-left: 80px;
   }
+
   .quote-text {
     padding-left: 43px;
   }
@@ -255,13 +262,16 @@
     --arrow-move-y: 40%;
     --arrow-move-x: 13px;
   }
+
   .quotes {
     height: auto;
   }
+
   .quotes .carousel-item img {
     margin: 90px auto 0 auto;
     padding-bottom: 10px;
   }
+
   .quotes .carousel-item .quote-text {
     padding-bottom: 103px;
   }
@@ -308,6 +318,7 @@
   /* top: 25px; */
   top: 5%;
 }
+
 .section .card-title {
   font-size: 16px;
   line-height: 20px;
@@ -324,11 +335,14 @@
   width: 60px;
 }
 
-.popular .carousel-control-prev.arrow-left {
+/* This is where the magic happens: targeting BOTH sections for arrow styles */
+.popular .carousel-control-prev.arrow-left, 
+.latest-videos .carousel-control-prev.arrow-left {
   left: var(--popular-arrows-x);
 }
 
-.popular .carousel-control-next.arrow-right {
+.popular .carousel-control-next.arrow-right,
+.latest-videos .carousel-control-next.arrow-right {
   right: var(--popular-arrows-x);
 }
 
@@ -336,6 +350,7 @@
   :root {
     --popular-arrows-x: -4vw;
   }
+
   .section .card {
     width: 19vw;
   }
@@ -345,10 +360,12 @@
   :root {
     --popular-arrows-x: -3vw;
   }
+
   .section .card-img-overlay {
     /* top: 25px; */
     top: 4%;
   }
+
   .section .card-img-overlay img {
     width: 35%;
   }
@@ -362,9 +379,11 @@
   .section .card {
     width: 16rem;
   }
+
   .section .card-img-overlay img {
     width: 30%;
   }
+
   .section .card-img-overlay {
     /* top: 25px; */
     top: 5%;
@@ -375,6 +394,7 @@
   :root {
     --popular-arrows-x: -6vw;
   }
+
   .section .card {
     width: 16rem;
   }
@@ -384,9 +404,11 @@
   :root {
     --popular-arrows-x: -15px;
   }
+
   .section .card-img-overlay img {
     width: 30%;
   }
+
   .section .card-img-overlay {
     /* top: 25px; */
     top: 5%;
@@ -419,6 +441,7 @@
   margin-left: var(--smile-p-margin);
   margin-right: var(--smile-p-margin);
 }
+
 .smiles .row {
   padding-bottom: 85px;
 }
@@ -432,10 +455,12 @@
     --smile-p-margin: 5vw;
     --smile-padding: 60px;
   }
+
   .smile1,
   .smile2 {
     padding-bottom: 58px;
   }
+
   .row .smile1,
   .row .smile2,
   .row .smile3,
@@ -448,6 +473,7 @@
   .row .smile3 {
     padding-left: var(--smile-padding);
   }
+
   .row .smile2,
   .row .smile4 {
     padding-right: var(--smile-padding);
@@ -459,11 +485,33 @@
     --smile-p-margin: 20vw;
     --smile-padding: 0;
   }
+
   .smile1,
   .smile2,
   .smile3 {
     padding-bottom: 50px;
   }
+}
+
+/* latest-videos Section  */
+.latest-videos {
+  height: auto;
+  background-color: var(--color-white);
+}
+
+.latest-videos .section-header {
+  padding-top: 87px;
+  padding-bottom: 75px;
+  color: var(--background-color);
+}
+
+.latest-videos .card {
+  padding-bottom: 87px;
+}
+
+.latest-videos .carousel-control-prev,
+.latest-videos .carousel-control-next {
+  width: 60px;
 }
 
 /* Footer  */
@@ -472,6 +520,7 @@
   background-color: var(--background-color);
   height: 249px;
 }
+
 .footer .container {
   height: 100%;
 }
@@ -487,6 +536,7 @@
 .footer .social-item {
   font-size: 30px;
 }
+
 .footer .social-item a {
   color: var(--color-white);
   text-decoration: none;
@@ -511,19 +561,24 @@
   .footer {
     height: auto;
   }
+
   .footer .row {
     height: auto;
   }
+
   .footer .trademark {
     padding-bottom: 0;
   }
+
   .footer .row {
     padding-top: 50px;
     padding-bottom: 34px;
   }
+
   .footer .social.nav {
     padding: 0px;
   }
+
   .footer .social {
     padding: 45px 0;
   }
@@ -557,6 +612,7 @@
 .pricing-header .hero .smile-fig {
   max-width: 37px;
 }
+
 .pricing-header .title-fig {
   width: 200px;
 }
@@ -565,9 +621,11 @@
   .pricing-header h1 {
     font-size: 24px;
   }
+
   .pricing-header .hero .smile-fig {
     max-width: 30px;
   }
+
   .pricing-header .title-fig {
     width: 150px;
   }
@@ -637,18 +695,22 @@
   .prices-grid .table {
     table-layout: initial;
   }
+
   .prices-grid .pricing-table-title-1,
   .prices-grid .pricing-table-title-2 {
     font-size: 12px;
     padding: 0;
     padding-bottom: 30px;
   }
+
   .prices-grid .prices-col-1 {
     padding-right: 30px;
   }
+
   .prices-grid .prices-col-2 {
     padding-right: 50px;
   }
+
   .prices-grid .pricing-table-title-1 {
     padding-right: 36px;
   }
@@ -720,14 +782,7 @@
   }
 }
 
-/* ==============================================================
-==============================================================
-============================================================== */
-/* COURSES  */
-
-/* ==============================================================
-==============================================================
-============================================================== */
+/* COURSES */
 
 /* Header Section  */
 
@@ -828,6 +883,7 @@
   font-weight: 300;
   font-size: 23px;
 }
+
 .search .dropdown .btn:after {
   color: var(--color-white);
   right: 12px;
@@ -861,6 +917,7 @@
 }
 
 /* RESULTS SECTION  */
+
 .results .section-title {
   font-size: 16px;
   line-height: 20px;
@@ -881,11 +938,12 @@
   .results .card-img-overlay {
     top: 1vh;
   }
+
   .results .rating img {
     width: 12px;
   }
 
-  .results .rating + span {
+  .results .rating+span {
     display: block;
     padding-top: 30px;
   }
@@ -907,18 +965,20 @@
 }
 
 .carousel-inner {
-    overflow: hidden;
-    position: relative;
-    width: 100%;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
 }
 
 .carousel-track {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-    width: max-content;  /* Permet un défilement fluide */
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: max-content;
+  /* Permet un défilement fluide */
 }
 
 .carousel-item {
-    flex: 0 0 auto;
-    width: 25%; /* 4 vidéos visibles à la fois */
+  flex: 0 0 auto;
+  width: 25%;
+  /* 4 vidéos visibles à la fois */
 }
